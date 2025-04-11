@@ -1,0 +1,27 @@
+{
+  "name": "chat-api",
+  "description": "A simple chat API using Hono and Bun",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts --outdir=dist --format=cjs",
+    "start": "bun run dist/index.js",
+    "test": "bun test",
+    "lint": "bun run lint",
+    "format": "bun run format",
+    "prettier": "bun run prettier"
+  },
+  "dependencies": {
+    "@google/genai": "^0.8.0",
+    "@google/generative-ai": "^0.24.0",
+    "hono": "^4.7.6",
+    "openai": "^4.91.1",
+    "stream-chat": "^8.59.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
